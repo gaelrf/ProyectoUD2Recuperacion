@@ -13,7 +13,7 @@ public class LibroDAO {
 
     public void connect(){
 
-        String stringConection = "jdbc:mysql://localhost:3306/employees";
+        String stringConection = "jdbc:mysql://localhost:3306/libros";
         Properties propertiesConection = new Properties();
         propertiesConection.setProperty("user","root");
         propertiesConection.setProperty("password", "root");
