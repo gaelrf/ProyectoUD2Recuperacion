@@ -16,7 +16,7 @@ public class LibroView {
         System.out.println(libro);
         char confirmation = Inputs.inputChar("¿Desea importar este libro? (S/N)");
 
-        if (confirmation != 'S' || confirmation != 's'){
+        if (confirmation != 'S' && confirmation != 's'){
 
             libro=null;
 
