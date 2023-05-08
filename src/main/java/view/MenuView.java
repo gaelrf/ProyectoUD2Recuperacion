@@ -27,4 +27,15 @@ public class MenuView {
 
     }
 
+    public int optionBuscar() {
+
+        System.out.println("1. Listar.");
+        System.out.println("2. Buscar.");
+        System.out.println("0. Cancelar.");
+
+        int op = Inputs.inputInt("Seleccione opción de busqueda");
+
+        return op;
+
+    }
 }

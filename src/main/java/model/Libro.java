@@ -14,6 +14,10 @@ public class Libro {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -36,6 +40,9 @@ public class Libro {
 
     public void setFirstEdition(int firstEdition) {
         this.firstEdition = firstEdition;
+    }
+
+    public Libro() {
     }
 
     public Libro(String title, String author, int firstEdition) {

@@ -54,14 +54,17 @@ public class MenuController {
 
                 case 2:
 
+                    menuBuscarLibro();
                     break;
 
                 case 3:
 
+                    libroController.update();
                     break;
 
                 case 4:
 
+                    libroController.delete();
                     break;
 
                 case 0:
@@ -73,6 +76,32 @@ public class MenuController {
                     break;
 
             }
+
+        }
+
+    }
+
+    private void menuBuscarLibro() {
+
+        int op = -1;
+
+        op = menuView.optionBuscar();
+
+        switch (op){
+
+            case 1:
+
+                libroController.list();
+                break;
+
+            case 2:
+
+                libroController.search();
+                break;
+
+            case 0:
+
+                break;
 
         }
 
